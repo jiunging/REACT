@@ -1,15 +1,20 @@
-import EventComponent from "./component/EventComponent"
+import IterationComponentQ2 from "./component/IterationComponentQ2";
+import HookEffect from "./hook/HookEffect";
+import HookRef from "./hook/HookRef";
 
 function App() {
-  return (
-    <div>
-      <h3>이벤트 활용하기</h3>
 
-      <EventComponent/>
+  return(
+    
+    <>
+      <HookEffect/>
+      <hr/>
+      <HookRef/>
+      <hr/>
+      <IterationComponentQ2/>
 
-
-    </div>
+    </>
   )
 }
 
-export default App
+export default App;
