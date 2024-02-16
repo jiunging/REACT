@@ -22,18 +22,16 @@ function IterationComponentQ2() {
 
   // 3. select 태그에서 체인지가 일어나면 state에서 필터링을 하면 된다.
   let changeMenu = (e) => {
-    const newData = [...data];
-    const newList = newData.filter( item => item.type === e.target.value);
+    const newList = data.filter( item => item.type === e.target.value);
     setSubject(newList);
   }
 
   // 4. 검색기능 - 인풋태그의 값을 가지고 state에서 필터링
   let searchMenu = () => {
-    const newData = [...data];
-    const newList = newData.filter ( item => item.type.toLowerCase() == inputRef.current.value.toLowerCase())
+    // const newList = data.filter ( item => item.type.toLowerCase() == inputRef.current.value.toLowerCase())
+    const newList = data.filter ( item => item.type.toLowerCase().includes(inputRef.current.value.toLowerCase()) )
     setSubject(newList)
   }
-
 
   return (
     <>

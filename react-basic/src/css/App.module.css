@@ -1,0 +1,14 @@
+.app_wrap {
+    color: red;
+    border: 1px solid #777;
+    background-color: aquamarine;
+}
+
+.app_wrap > .app_item {
+    color: blueviolet;
+}
+
+/* global키워드를 붙이면, 그냥 사용하면 됨 */
+:global .title {
+    color: blue;
+}
